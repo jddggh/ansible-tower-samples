@@ -4,4 +4,9 @@
     - name: Hello Message
       debug:
         msg: "Hello World!"
+    - name: Touch file
+      file:
+        dest: /tmp/hello
+        mode: 755
+        state: directory
 
